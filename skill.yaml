@@ -1,0 +1,21 @@
+name: purref_reference_boards
+title: PureRef reference boards as .pur files
+description: Build image reference sets as PureRef .pur files in 2.x format from PNG images only and verify each file opens in the user's Obsidian plugin parser before handing it over.
+category: Creation
+include_in_prompt: false
+skill_improvement:
+  managed: true
+  status: active
+  evidence_handles:
+  - ~/workspace/custom-skills/purref_reference_boards/SKILL.md
+  - purref_reference_boards revision 68620b46d4eaa596196cd3d2ea84521232a26a35e105f96a7444c7afa3b649eb
+  - ~/workspace/custom-connectors/custom.pixiv/CONNECTOR.md
+  measurement:
+    proxy_metric_id: objective_success_rate
+    success_criterion: Within 30 days, the purref skill's Available connectors link to custom.pixiv is present, the pixiv connector's Related skills link back to purref_reference_boards, and no conflict or non-reciprocal link is reported.
+    window_days: 30
+  needs_review: false
+  rationale: The new custom.pixiv connector doc lists purref_reference_boards under Related skills, because pixiv searches supply the reference images that become .pur boards. The skill's Available connectors section currently names no specific connector, so the link would be non-reciprocal in the direction the verifier rejected for the moneyforward skill. This update adds the single matching link and preserves every other instruction, the include_in_prompt choice and the learning history, so the pair is reciprocal from publication.
+  review_after: 2026-12-12T06:05:34.845066+00:00
+  reviewed_at: 2026-11-12T06:05:34.845066+00:00
+  run_id: sirun_8c1d08c688bb4354b3e9ee4ce8e3d95f

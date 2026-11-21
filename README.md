@@ -1,5 +1,7 @@
 # purref-reference-boards
 
+English version: [README.en.md](README.en.md)
+
 PureRef 2.x 形式のリファレンスボード（.pur）を PNG 画像から生成するための Muse カスタムスキルです。
 生成したファイルは、Obsidian プラグイン「LazyRef PUR Viewer」のパーサーで開けることを確認してから渡す、という検証込みの手順になっています。
 
